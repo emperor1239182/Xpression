@@ -30,6 +30,7 @@ function App() {
 
     
   <BrowserRouter>
+  <p>sdjheduy</p>
   <header className='header'>
     <FontAwesomeIcon icon={faBars} className='bars' onClick={handleButtonClick}/>
   <h2>Xpression</h2>
