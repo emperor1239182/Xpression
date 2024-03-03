@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.header{
+    /* style for the page header */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px;
+}
+#list{
+    
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#list li{
+    margin: 10px;
+}
+.list{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+}
+.list li{
+    margin: 10px;
+}
+li{
+    list-style-type: none;
+}
+
+.slider{
+    text-align: center; /* image slider texts */
+}
+ .link{
+    text-decoration: none;
+    color: black;
+}
+.price{
+    font-size: 0.8rem;
+}
+.newProducts{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    justify-content: center;
+}
+
+.items, .pants{
+    display: flex;
+        gap: 10px;
+        overflow: auto;
+        max-width: 80%;
+        position: relative;
+        
+}
+.items::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.items::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+.pants::-webkit-scrollbar {
+    width: 6px;
+    background-color: transparent;
+}
+.pants::-webkit-scrollbar-thumb{
+    background-color: transparent;
+}
+
+.bars{
+    display: none;
+}
+.closing{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgb(66, 34, 96);
+    color: white;
+    padding: 20px;
+}
+.closing  div > p{
+    margin-top: 12px;
+    font-size: 0.95rem;
+}
+
+@media only screen and (max-width: 500px){
+    .newProducts{
+        grid-template-columns: auto auto;
+        gap: 6px;
+    }
+    
+     .list{
+        display: none;
+    }
+    .bars{
+        display: block;
+    }
+    .collections{
+        overflow: auto;
+        column-gap: 10px;
+    }
+    .collections::-webkit-scrollbar {
+        width: 6px;
+        background-color: transparent;
+    }
+    .collections::-webkit-scrollbar-thumb{
+        background-color: transparent;
+    }
+    .closing{
+        grid-template-columns: auto auto;
+        
+    }
+    
+}
+
+.hoodies{
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+}
+.collections{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+}
+.beauty{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(67, 63, 63);
+    margin: 40px;
+    padding: 15px;
+    color: white;
+    font-size: 0.8rem;
+}
+.shopLink{
+    color: black;
+    background-color: white;
+    width: 110px;
+    text-align: center;
+}
+.Cl-pics{
+    width: 100%;
+    height: 300px;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.buttonLeft, .buttonRight{
+    border: none;
+    font-size: 1.3rem;
+    background-color: transparent;
+    position: absolute;
+    color: rgb(30, 94, 94);
+}
+.rev{
+    position: relative;
+    width: 80%;
+}
+.buttonLeft{
+    top: 150px;
+    left: 2px;
+}
+.buttonRight{
+    top: 150px;
+    right: 2px;
+}
+.banking{
+    margin: 0;
+}
+.card{
+    margin: 10px auto;
+    width: 350px;
+    max-width: 70%;
+    height: auto;
+    position: relative;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 7px 7px 15px black;
+    animation: move 8s ease-in-out infinite alternate forwards;
+    background-image: linear-gradient(80deg, rgb(125, 146, 125),  rgb(147, 147, 192), rgb(197, 158, 197) 50%, rgb(214, 136, 148) 100%);
+}
+.bank{
+    position: absolute;
+    right: 16px;
+    top: 4px;
+    font-weight: bolder;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.details{
+display: flex;
+justify-content: space-between;
+}
+.design{
+    align-self: flex-end;
+    border: 1px solid transparent;
+    width: 42px;
+    height: 35px;
+    border-radius: 100%;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+    margin-right: -18px;
+    opacity: 0.7;
+}
+img{
+    width: 30px;
+    height: auto;
+}
+.card-numbers{
+    color: white;
+    letter-spacing: 10px;
+    font-weight: bold;
+}
+.validity{
+    font-size: 12px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: lighter;
+}
+@keyframes move {
+     0%{left: -100%; transform: rotate(50deg);}
+     100%{left: 0; transform: rotate(360deg);}
+     
+}
