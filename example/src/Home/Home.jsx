@@ -21,7 +21,7 @@ const Home = () => {
      
      const Samples = {
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'center'
     
      }
      const productsImages = {
@@ -88,37 +88,37 @@ useEffect (() => {
             <li>
             <h4>New Products</h4>
             <br /> 
-                <Link to="/buy" className='link'> <img src="/public/leather skirt.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className='link'> <img src="/public/leather skirt.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Leather Skirt</p> 
                 <p className="price">$400</p>
             </li>
             <li>
             <br /> <br />
-                <Link to="/buy" className='link'> <img src="/public/jeans jacket.JPG" style={productsImages}></img>  </Link>
+                <Link to="/shop" className='link'> <img src="/public/jeans jacket.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Jeans Jacket</p>
                 <p className="price">$6000</p>
             </li>
             <li>
             <br /> <br />
-                <Link to="/buy" className='link'> <img src="/public/Blue hoodie.JPG" style={productsImages}></img>  </Link>
+                <Link to="/shop" className='link'> <img src="/public/Blue hoodie.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Blue Hoodie</p>
                 <p className="price">$8000</p>
             </li>
             <li>
             <br /> <br />
-                <Link to="/buy" className='link'> <img src="/public/mickey mouse.JPG" style={productsImages}></img>  </Link>
+                <Link to="/shop" className='link'> <img src="/public/mickey mouse.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Mickey Mouse</p>
                 <p className="price">$1000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/short.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/short.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Short Combat Pant</p>
                 <p className="price">$3000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/brown jacket.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/brown jacket.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Brown Jacket</p>
                 <p className="price">$700</p>
             </li>
