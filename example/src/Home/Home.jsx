@@ -206,7 +206,7 @@ useEffect (() => {
              <img src="/public/crochet sweater.WEBP" className='sweater' style={productsImages}></img> 
             <p className="productName" style={{fontSize: '13px'}}>Crochet Sweater </p>
             <p className="productName" style={{fontSize: '13px'}}>Crochet sweater collection just for you</p>
-                <Link to="/shop" className="link ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
+                <Link to="/shop" className="linK ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
                 </li>
                 <li>
                  <img src="/public/Blue hoodie.JPG" className="sweater" style={productsImages}></img>  
