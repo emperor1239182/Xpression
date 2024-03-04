@@ -131,67 +131,67 @@ useEffect (() => {
             <li>
             <h4>Popular Products</h4>
             <br /> 
-                <Link to="/skirt" className='link'> <img src="/public/hf.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className='link'> <img src="/public/hf.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>High Fashion</p> 
                 <p className="price">$9000</p>
             </li>
             <li>
             <br /> <br />
-                <Link to="/buy" className='link'> <img src="/public/green joggers.JPG" style={productsImages}></img>  </Link>
+                <Link to="/shop" className='link'> <img src="/public/green joggers.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Joggers</p>
                 <p className="price">$6000</p>
             </li>
             <li>
             <br /> <br />
-                <Link to="/buy" className='link'> <img src="/public/armless.JPG" style={productsImages}></img>  </Link>
+                <Link to="/shop" className='link'> <img src="/public/armless.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Armless</p>
                 <p className="price">$2000</p>
             </li>
             <li>
             <br /> <br />
-                <Link to="/buy" className='link'> <img src="/public/white vintage.JPG" style={productsImages}></img>  </Link>
+                <Link to="/shop" className='link'> <img src="/public/white vintage.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Vintage</p>
                 <p className="price">$1000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/jeans up and down.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/jeans up and down.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Zipper jeans</p>
                 <p className="price">$3000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/TTIO8506.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/TTIO8506.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Two Piece</p>
                 <p className="price">$9000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/PGGY2062.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/PGGY2062.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}> Chrome Combat Short</p>
                 <p className="price">$4000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/LXLK6631.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/LXLK6631.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>High Quality Stylish</p>
                 <p className="price">$3000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/KVJJ2447.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/KVJJ2447.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Zipper Joggers</p>
                 <p className="price">$8000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/women jeans.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/women jeans.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Chrome Combat jeans</p>
                 <p className="price">$2000</p>
             </li>
             <li>
                 <br/> <br />
-                <Link to="/buy" className="link "> <img src="/public/black armless.JPG" style={productsImages}></img> </Link>
+                <Link to="/shop" className="link "> <img src="/public/black armless.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Two Piece</p>
                 <p className="price">$9000</p>
             </li>
@@ -206,19 +206,19 @@ useEffect (() => {
              <img src="/public/crochet sweater.WEBP" className='sweater' style={productsImages}></img> 
             <p className="productName" style={{fontSize: '13px'}}>Crochet Sweater </p>
             <p className="productName" style={{fontSize: '13px'}}>Crochet sweater collection just for you</p>
-                <Link to="/buy" className="link ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
+                <Link to="/shop" className="link ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
                 </li>
                 <li>
                  <img src="/public/Blue hoodie.JPG" className="sweater" style={productsImages}></img>  
                 <p className="productName" style={{fontSize: '13px'}}>Blue Hoodie</p>
                 <p className="productName" style={{fontSize: '13px'}}>Blue hoodie collection, peerfect for gifting </p>
-                <Link to="/buy" className="link ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
+                <Link to="/shop" className="link">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
                 </li>
                 <li>
                  <img src="/public/green sweater.JPG" className="sweater" style={productsImages}></img> 
                 <p className="productName" style={{fontSize: '13'}}>Green Sweater</p>
                 <p className="productName" style={{fontSize: '13px'}}>Lovely winter collection just for you </p>
-                <Link to="/buy" className="link ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
+                <Link to="/shop" className="link ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
                 </li>
                 </div>
             </div> 
@@ -229,63 +229,63 @@ useEffect (() => {
             <div className="combatPants" style={Samples}>
                 <div className="pants">
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/blue cargo pant.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Blue Combat Pant</p>
                 <p className="price">$700</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/brown cargo.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Cargo Pant</p>
                 <p className="price">$6000</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/quality combat pant.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Luxury Cobant Pant</p>
                 <p className="price">$3000</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/slim fit cargo.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Perfect Fit</p>
                 <p className="price">$1300</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/white rope cargo.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>High Fashion</p>
                 <p className="price">$2500</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/white jorgas.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Jorgas</p>
                 <p className="price">$5000</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/swag.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Two Piece</p>
                 <p className="price">$800</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/ash joggers.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Zip UP Pant</p>
                 <p className="price">$1000</p>
                 </li>
                 <li>
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/blue cargo pant.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Cargo Pant</p>
@@ -299,56 +299,56 @@ useEffect (() => {
                 <div className="newProducts">
                     <li>
                     <h4 >Shoes Collection</h4> <br /> 
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/High fashion mixed loafers.JPG"  style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Mixed Loafers</p>
                 <p className="price">$6000</p>
                 </li> 
                 <li> <br /> <br />
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/female.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Jeans Made sandals</p>
                 <p className="price">$1000</p>
                 </li>
                 <li> <br /> <br />
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/Derby.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Derby</p>
                 <p className="price">$3000</p>
                 </li>
                 <li> <br /> <br />
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/Loafers.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Loafers</p>
                 <p className="price">$1000</p>
                 </li>
                 <li> <br /> <br />
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/oxford sshoe.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>All Black Oxford</p>
                 <p className="price">$2500</p>
                 </li>
                 <li> <br /> <br />
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/pink crocs.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Crocs</p>
                 <p className="price">$8000</p>
                 </li>
                 <li> <br /> <br />
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/loaffers.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Loafers</p>
                 <p className="price">$1600</p>
                 </li>
                 <li> <br /> <br />
-                <Link to="/buy" className="link ">
+                <Link to="/shop" className="link ">
                  <img src="/public/monk strap.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Monk Strap</p>
@@ -362,7 +362,7 @@ useEffect (() => {
                     <h4 >Come And Let Us Style You</h4>
                     <p>get in touch with us today</p>
                     <p>explore our shop</p> <br />
-                    <Link to="/buy" className="link shopLink">shop</Link>
+                    <Link to="/shop" className="link shopLink">shop</Link>
                 </div>
             </section> <br /> <br />
 
@@ -381,7 +381,7 @@ useEffect (() => {
             <section className="ask">
                 <div className="info" style={info}>
                     <p style={{fontFamily:'monospace', fontSize:'1.3rem', marginBottom:'12px'}}>HAVE ANY QUESTIONS YOU WANT TO ASK US?</p> 
-                    <Link to='/buy' className="link">Read our frequently asked questions here <FontAwesomeIcon icon={faArrowAltCircleRight} /></Link>
+                    <Link to='/shop' className="link">Read our frequently asked questions here <FontAwesomeIcon icon={faArrowAltCircleRight} /></Link>
                 </div>
             </section> <br />
 
@@ -409,7 +409,7 @@ useEffect (() => {
               <span className="design orange"></span> <span className="design red"></span>
             </div>
         </div>
-        <p style={{textAlign:'center'}}>Shop With Your Card</p>
+        <p style={{textAlign:'center', backgroundColor:'ThreeDLightShadow', width:'200px'}}><Link to='/shop'>Shop With Your Card </Link> </p>
             </section>
 
             <section className="footer">

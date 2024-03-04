@@ -8,6 +8,8 @@ const About = () => {
         fontSize: '1rem',
         fontFamily: 'Cambria, Cochin, Georgia, Times, serif'
     }
+    
+
 
 
     return (
@@ -26,7 +28,7 @@ const About = () => {
             <img src="/public/swag.JPG" style={{width:'300px', height:'400px', marginTop:'10px'}}/>
             </div>
         </div>
-        <p style={{textAlign:'center'}}>With over 20,000 delivery nationwide, we are across over 7 countries nationwide (South Africa, Nigeria, United States, Japan, France, Italy, Russia )</p>
+        <p style={{textAlign:'center'}}>With over 20,000 delivery nationwide, we are across over 7 countries nationwide (South Africa, Nigeria, United States, Japan, France, Italy, Russia )</p> <br />
         <section className="footer">
                 <footer className="closing">
                     <div>
