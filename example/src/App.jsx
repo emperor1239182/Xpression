@@ -8,6 +8,7 @@ import About from './About/About';
 import Shop from './Shop/Shop';
 import Skirt from './Skirt/Skirt';
 import Contact from './Contact/Contact';
+import Login from './Login/Login';
 function App() {
 
   const [isToolsVisible, setIsToolsVisible] = useState(false);
@@ -53,7 +54,7 @@ function App() {
             </ul>
             </nav>
   <span>
-  <FontAwesomeIcon icon={faUser} style={{marginRight: '10px'}} />
+  <Link to="/login" className='link'> <FontAwesomeIcon icon={faUser} style={{marginRight: '10px'}} /> </Link>
   <FontAwesomeIcon icon={faCartShopping} />
   </span>
   </header>
@@ -85,6 +86,7 @@ function App() {
   <Route path='/shop' Component={Shop} />
   <Route path='/contact' Component={Contact} />
   <Route path='/skirt' Component={Skirt} />
+  <Route path='/login' Component={Login} />
   </Routes>
   
             

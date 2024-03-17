@@ -42,7 +42,17 @@ const Home = () => {
         backgroundColor: 'rgb(233, 230, 230)',
         padding: '20px'
      }
-     
+     //shop with card
+     const shop = {
+        textAlign:'center',
+         backgroundColor:'#fc00ff', 
+         width:'150px',
+          margin:'auto auto', 
+         display:'block',
+         padding: '3px',
+         borderRadius: '3px',
+         marginBottom: '4px'
+     }
      
 
     // function for the image slider
@@ -206,7 +216,7 @@ useEffect (() => {
              <img src="/public/crochet sweater.WEBP" className='sweater' style={productsImages}></img> 
             <p className="productName" style={{fontSize: '13px'}}>Crochet Sweater </p>
             <p className="productName" style={{fontSize: '13px'}}>Crochet sweater collection just for you</p>
-                <Link to="/shop" className="linK ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
+                <Link to="/shop" className="link ">see more <FontAwesomeIcon icon={faArrowAltCircleRight}/></Link>
                 </li>
                 <li>
                  <img src="/public/Blue hoodie.JPG" className="sweater" style={productsImages}></img>  
@@ -409,7 +419,7 @@ useEffect (() => {
               <span className="design orange"></span> <span className="design red"></span>
             </div>
         </div>
-        <p style={{textAlign:'center', backgroundColor:'ThreeDLightShadow', width:'200px'}}><Link to='/shop'>Shop With Your Card </Link> </p>
+        <p style={shop}><Link to='/shop' className="link">Shop With Your Card </Link> </p>
             </section>
 
             <section className="footer">
