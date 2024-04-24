@@ -49,7 +49,7 @@ function App() {
               <Link to='/contact' className='link'>Contact</Link>
             </li>
             <li>
-              <Link to='/skirt' className='link'>Contact</Link>
+              <Link to='/skirt' className='link'>Faqs</Link>
             </li>
             </ul>
             </nav>
@@ -58,7 +58,6 @@ function App() {
   <FontAwesomeIcon icon={faCartShopping} />
   </span>
   </header>
-
   <nav className='menu'>
   <ul id='list'>
   <li>
@@ -74,7 +73,7 @@ function App() {
               <Link to='/contact' className='link'>Contact</Link>
             </li>
             <li>
-              <Link to='/skirt' className='link'>Contact</Link>
+              <Link to='/skirt' className='link'>Faqs</Link>
             </li>
             </ul>
             </nav>
