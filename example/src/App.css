@@ -151,7 +151,7 @@ li{
 }
 .Cl-pics{
     width: 100%;
-    height: 300px;
+    height: 49vh;
 }
 .review{
     display: flex;
@@ -170,7 +170,6 @@ li{
 }
 .rev{
     position: relative;
-    width: 80%;
 }
 .buttonLeft{
     top: 150px;
@@ -270,4 +269,17 @@ img{
 .col-11{width: 91.66%;}
 .col-12{width: 100%;}
 
+.Cl-pics{
+    width: 100%;
+    height: 49vh;
+}
+.rev{
+    position: relative;
+    width: 65%;
+}
+}
+.imageDesc{
+    display: block;
+    width: 100px;
+    height: 100vh;
 }

@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-
 const Login = () => {
     const form = {
         display: 'flex',
@@ -17,13 +15,15 @@ const Login = () => {
         alignItems: 'center',
         marginTop: '20px'
     }
-    const handleSubmit = (event) => {
-        event.preventDefault();
-    }
+    const handleSubmit = (e) =>{
+        e.preventDefault();
+        window.History();
+    };
+    
     return (
         <>
         <div style={container}>
-        <form  style={form} onSubmit={handleSubmit}>
+        <form  style={form} onSubmit={handleSubmit} >
             <h4>LOGIN</h4>
             <p>Email address</p>
             <input type="email"></input> 

@@ -53,7 +53,12 @@ const Home = () => {
          borderRadius: '3px',
          marginBottom: '4px'
      }
-     
+
+     //image lists for samples
+     const list ={
+        display: 'flex',
+        gap: '8px'
+     }
 
     // function for the image slider
     const [currentImage, setCurrent] = useState(0); // products
@@ -85,24 +90,49 @@ useEffect (() => {
     };
    }, [images.length]);
 
-   //products details
-   const[selectedProduct, setproducts] = useState(null);
-   const[isModalOpen, setIsModalOpen] = useState(false);
 
    const products = [
-    { id: 1, image: '/public/leather skirt.JPG', name:'Leather Skirt', desc: 'fjsfjisd', price: '$200'},
-    { id: 2, image: '/public/armless.JPG', name:' Skirt', desc: 'decription for product 1', price: '$400'},
-    { id: 3, image: '/public/leather skirt.JPG',  name:'Leather Skirt', desc: 'decription for product 1', price: '$200'},
-    { id: 4, image: '/public/leather skirt.JPG',  name:'Leather Skirt', desc: 'decription for product 1', price: '$200'},
-    { id: 5, image: '/public/leather skirt.JPG',  name:'Leather Skirt', desc: 'decription for product 1', price: '$200'}
+    { id: 1,
+     image: '/public/leather skirt.JPG',
+     name:'Leather Skirt', 
+     desc:'High quality leather skirt up and down. Best suitable for all occassions such as: dinner date, house party, etc', 
+     price: '$200'
+    },
+    { id: 2, 
+     image: '/public/jeans jacket.JPG', 
+     name:'Jeans Jacket',
+     desc:'Jeans jacket, also available in black color... Get the best out of Xpression wears in this nice jacket', 
+     price: '$600'
+    },
+    { id: 3, 
+      image: '/public/Blue hoodie.JPG',  
+      name:'Blue Hoodie', 
+      desc:'Feeling cold? Try out this luxury high quality hoodie for all cold season; keeps you warm and cozy', 
+      price: '$250'
+    },
+    { id: 4, 
+      image: '/public/mickey mouse.JPG', 
+      name:'Vintage', 
+      desc: 'Vintage shirt for your casual outing', 
+      price: '$200'
+    },
+    { id: 5, 
+      image: '/public/short.JPG',  
+      name:'Chrombat short', 
+      desc: 'Our chrombat pants don\'t just come in long pairs but also in short design ', 
+      price: '$600'
+    },
+    { id: 6, 
+      image: '/public/brown jacket.JPG', 
+      name:'Brown Jacket', 
+      desc: 'You love brown? then this is for you... made out of the best jeans materials in the world', 
+      price: '$300'
+    }
    ];
-   const handleProducts = (product) => {
-    setproducts(product);
-    setIsModalOpen(true);
-   };
-
+   
 
     return (
+        
         <>
             <div className="slider">
                 <img src={images[currentImage].image}  style={Imag}/>
@@ -111,62 +141,26 @@ useEffect (() => {
     </div>
     <div className="samples" style={Samples}>
             <div className="items">
-                <ul> {products.map(product => ( for (let index = 0; index < products.length; index++) {
-                    const element = products[index];
-                    
-                }
-
-
-        <li key={product[0].id} onClick={()=> handleProducts(product[0])}> <br /> <br />
-        <img src={product[0].image} style={productsImages} />
-        <p>{product[0].name}</p>
-        <p className="price">{product[0].price}</p>
-        </li>
+                <ul style={list}> 
+                    {products.map(product => (    
+         <li key={product.id}> <br /> <br />
+         
+        <img src={product.image} style={productsImages} />
+        <p style={{fontSize: '13.8px'}}>{product.name}</p>
+        <p className="price">{product.price}</p>
+        
+        </li> 
     ))}
     </ul> 
 
-    {isModalOpen && (
-        <div>
-            <img src={selectedProduct.image}/>
-            <p>Description: {selectedProduct.desc} </p>
-            <p>Price: {selectedProduct.price} </p>
-            <button onClick={() => setIsModalOpen(false)}>Close</button>
-            </div>
-    )}
+    
         <br /> 
-        
-            <li>
-            <br /> <br />
-                <Link to="/shop" className='link'> <img src="/public/jeans jacket.JPG" style={productsImages}></img>  </Link>
-                <p className="productName" style={{fontSize: '13.8px'}}>Jeans Jacket</p>
-                <p className="price">$6000</p>
-            </li>
-            <li>
-            <br /> <br />
-                <Link to="/shop" className='link'> <img src="/public/Blue hoodie.JPG" style={productsImages}></img>  </Link>
-                <p className="productName" style={{fontSize: '13.8px'}}>Blue Hoodie</p>
-                <p className="price">$8000</p>
-            </li>
-            <li>
-            <br /> <br />
-                <Link to="/shop" className='link'> <img src="/public/mickey mouse.JPG" style={productsImages}></img>  </Link>
-                <p className="productName" style={{fontSize: '13.8px'}}>Mickey Mouse</p>
-                <p className="price">$1000</p>
-            </li>
-            <li>
-                <br/> <br />
-                <Link to="/shop" className="link "> <img src="/public/short.JPG" style={productsImages}></img> </Link>
-                <p className="productName" style={{fontSize: '13.8px'}}>Short Combat Pant</p>
-                <p className="price">$3000</p>
-            </li>
-            <li>
-                <br/> <br />
-                <Link to="/shop" className="link "> <img src="/public/brown jacket.JPG" style={productsImages}></img> </Link>
-                <p className="productName" style={{fontSize: '13.8px'}}>Brown Jacket</p>
-                <p className="price">$700</p>
-            </li>
             </div>
-            </div>
+            </div>  
+
+            
+
+           
             <br /> <br /> <br /> <br />
 
             <section className="new-products">
@@ -498,6 +492,7 @@ useEffect (() => {
                 </footer>
             </section>
         </>
+        
     )
 }
 export default Home;
