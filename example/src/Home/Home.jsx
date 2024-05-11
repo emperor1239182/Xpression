@@ -85,6 +85,23 @@ useEffect (() => {
     };
    }, [images.length]);
 
+   //products details
+   const[selectedProduct, setproducts] = useState(null);
+   const[isModalOpen, setIsModalOpen] = useState(false);
+
+   const products = [
+    { id: 1, image: '/public/leather skirt.JPG', name:'Leather Skirt', desc: 'fjsfjisd', price: '$200'},
+    { id: 2, image: '/public/armless.JPG', name:' Skirt', desc: 'decription for product 1', price: '$400'},
+    { id: 3, image: '/public/leather skirt.JPG',  name:'Leather Skirt', desc: 'decription for product 1', price: '$200'},
+    { id: 4, image: '/public/leather skirt.JPG',  name:'Leather Skirt', desc: 'decription for product 1', price: '$200'},
+    { id: 5, image: '/public/leather skirt.JPG',  name:'Leather Skirt', desc: 'decription for product 1', price: '$200'}
+   ];
+   const handleProducts = (product) => {
+    setproducts(product);
+    setIsModalOpen(true);
+   };
+
+
     return (
         <>
             <div className="slider">
@@ -94,14 +111,30 @@ useEffect (() => {
     </div>
     <div className="samples" style={Samples}>
             <div className="items">
+                <ul> {products.map(product => ( for (let index = 0; index < products.length; index++) {
+                    const element = products[index];
+                    
+                }
+
+
+        <li key={product[0].id} onClick={()=> handleProducts(product[0])}> <br /> <br />
+        <img src={product[0].image} style={productsImages} />
+        <p>{product[0].name}</p>
+        <p className="price">{product[0].price}</p>
+        </li>
+    ))}
+    </ul> 
+
+    {isModalOpen && (
+        <div>
+            <img src={selectedProduct.image}/>
+            <p>Description: {selectedProduct.desc} </p>
+            <p>Price: {selectedProduct.price} </p>
+            <button onClick={() => setIsModalOpen(false)}>Close</button>
+            </div>
+    )}
         <br /> 
-            <li>
-            <h4>New Products</h4>
-            <br /> 
-                <Link to="/shop" className='link'> <img src="/public/leather skirt.JPG" style={productsImages}></img> </Link>
-                <p className="productName" style={{fontSize: '13.8px'}}>Leather Skirt</p> 
-                <p className="price">$400</p>
-            </li>
+        
             <li>
             <br /> <br />
                 <Link to="/shop" className='link'> <img src="/public/jeans jacket.JPG" style={productsImages}></img>  </Link>

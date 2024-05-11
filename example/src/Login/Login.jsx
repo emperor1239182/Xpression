@@ -17,7 +17,6 @@ const Login = () => {
         alignItems: 'center',
         marginTop: '20px'
     }
-    const [name, setName] = useState("");
     const handleSubmit = (event) => {
         event.preventDefault();
     }
