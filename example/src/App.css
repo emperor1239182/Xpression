@@ -138,10 +138,11 @@ li{
     justify-content: center;
     align-items: center;
     background-color: rgb(67, 63, 63);
-    margin: 40px;
+    margin: 40px auto;
     padding: 15px;
     color: white;
-    font-size: 0.8rem;
+    font-size: 1.4rem;
+    width: 80%;
 }
 .shopLink{
     color: black;
@@ -282,4 +283,31 @@ img{
     display: block;
     width: 100px;
     height: 100vh;
+}
+.dropDown{
+    position: relative;
+    display: inline-block;
+}
+.question{
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    width: 70vw;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+.dropdownContent{
+    display: none;
+    position: absolute;
+}
+.dropDown:hover .dropdownContent{
+    display: block;
+}
+.questions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import Home from './Home/Home';
 import About from './About/About';
 import Shop from './Shop/Shop';
-import Skirt from './Skirt/Skirt';
+import Faq from './FAQ/Faq';
 import Contact from './Contact/Contact';
 import Login from './Login/Login';
 function App() {
@@ -49,7 +49,7 @@ function App() {
               <Link to='/contact' className='link'>Contact</Link>
             </li>
             <li>
-              <Link to='/skirt' className='link'>Faqs</Link>
+              <Link to='/faq' className='link'>Faqs</Link>
             </li>
             </ul>
             </nav>
@@ -73,7 +73,7 @@ function App() {
               <Link to='/contact' className='link'>Contact</Link>
             </li>
             <li>
-              <Link to='/skirt' className='link'>Faqs</Link>
+              <Link to='/faq' className='link'>Faqs</Link>
             </li>
             </ul>
             </nav>
@@ -84,7 +84,7 @@ function App() {
   <Route path='/about'   Component={About} />
   <Route path='/shop' Component={Shop} />
   <Route path='/contact' Component={Contact} />
-  <Route path='/skirt' Component={Skirt} />
+  <Route path='/faq' Component={Faq} />
   <Route path='/login' Component={Login} />
   </Routes>
   

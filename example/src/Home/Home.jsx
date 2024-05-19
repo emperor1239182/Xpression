@@ -26,8 +26,10 @@ const Home = () => {
      }
      const productsImages = {
         border: '1px solid grey',
+        borderRadius: '4px',
         width: '150px',
-        height: '33vh'
+        height: '33vh',
+        
      }
 
      //style for the info
@@ -158,7 +160,7 @@ useEffect (() => {
             </div>
             </div>  
 
-            
+
 
            
             <br /> <br /> <br /> <br />

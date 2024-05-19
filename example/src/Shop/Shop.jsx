@@ -5,10 +5,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShirt} from '@fortawesome/free-solid-svg-icons'
 const Shop = () => {
 
-    const productsImages = {
+    
+     const productsImages = {
         border: '1px solid grey',
+        borderRadius: '4px',
         width: '150px',
-        height: '33vh'
+        height: '33vh',
+        
      }
      const shop = {
         display: 'flex',
@@ -21,6 +24,7 @@ const Shop = () => {
         backgroundColor: 'rgb(164, 227, 227, 0.4)'
 
      }
+     
 
 
     return (
