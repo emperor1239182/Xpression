@@ -30,7 +30,9 @@ const Login = () => {
             <p>Password</p>
             <input type="text"></input> 
             <input type="submit" value="Login" />
+            <p>Don't have an account? sign up</p>
         </form>
+        
         </div>
         </>
     )

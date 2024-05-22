@@ -11,13 +11,12 @@
     margin: 0 10px;
 }
 #list{
-    
     list-style-type: none;
     justify-content: center;
     align-items: center;
     display: none;
 }
-#list li{
+ #list li {
     margin: 10px;
 }
 .list{
@@ -141,7 +140,7 @@ li{
     margin: 40px auto;
     padding: 15px;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.05rem;
     width: 80%;
 }
 .shopLink{
@@ -297,17 +296,17 @@ img{
     font-weight: bold;
     border-radius: 4px;
     margin-top: 50px;
+    
 }
 .dropdownContent{
     display: none;
     position: absolute;
 }
-.dropDown:hover .dropdownContent{
-    display: block;
-}
+
 .questions{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }

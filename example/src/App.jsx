@@ -24,6 +24,7 @@ function App() {
   
     const handleButtonClick = () => {
       setIsToolsVisible(prevState => !prevState);
+      
     }
 
 
@@ -35,7 +36,7 @@ function App() {
     <FontAwesomeIcon icon={faBars} className='bars' onClick={handleButtonClick}/>
   <h2>Xpression</h2>
   <nav className='menu'>
-  <ul className='list'  >
+  <ul className='list' >
   <li>
                 <Link to="/home" className='link'>Home</Link>
             </li> 
