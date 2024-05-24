@@ -17,7 +17,7 @@
     display: none;
 }
  #list li {
-    margin: 10px;
+    margin: 10px; 
 }
 .list{
     display: flex;
@@ -295,12 +295,12 @@ img{
     font-size: 18px;
     font-weight: bold;
     border-radius: 4px;
-    margin-top: 50px;
+    margin-top: 46px;
     
 }
 .dropdownContent{
     display: none;
-    position: absolute;
+    width: 66vw;
 }
 
 .questions{
