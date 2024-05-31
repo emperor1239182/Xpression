@@ -36,6 +36,8 @@ const Faq = () => {
         const handleButtonClick3 = () => {
             setVisible3(prevVisible => !prevVisible);
         };
+
+        
     
     return (
         <>

@@ -2,13 +2,35 @@ import { faShirt} from '@fortawesome/free-solid-svg-icons'
 import {FaFacebook, FaTwitter, FaInstagram, FaTrademark} from 'react-icons/fa'
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState, useEffect } from 'react';
 const Footer = () =>{
+    const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setTime(new Date());
+    }, 1000);
+
+    return () => clearInterval(intervalId);
+  }, [time]);
+
+  const hour = time.getHours();
+  const minute = time.getMinutes().toString().padStart(2, '0');
+  const seconds = time.getSeconds().toString().padStart(2, '0');
+  const name = hour < 12 ? 'AM' : 'PM';
+    
+
+    
+
     return(
         <>
 <section className="footer">
                 <footer className="closing">
-                    <div>
-                <p style={{fontSize:'20px'}}>Xpression <FontAwesomeIcon icon={faShirt} /> </p> <br />
+                  <div>
+                <p style={{fontSize:'20px'}}>Xpression <FontAwesomeIcon icon={faShirt} />  
+                <span className='time' >{hour} : {minute} : {seconds} {name}</span>
+                </p>   
+                <br/> 
                     <span style={{display:'flex', justifyContent:'space-between', width:'100px', marginBottom:'10px'}}>
                     <FaFacebook size={15}  />
                      <FaTwitter size={15}/>
@@ -21,6 +43,7 @@ const Footer = () =>{
                      <p>Airpots</p>
                      <p>Hotels</p>
                      </div>
+                     
                      <div style={{marginTop:'21px'}}>
                         <br /> <br /> <br />
                         <Link to='/home' className="link" style={{color:'white'}}>Home</Link>

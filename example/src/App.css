@@ -112,9 +112,11 @@ li{
         background-color: transparent;
     }
     .closing{
+        position: relative;
         grid-template-columns: auto auto;
-        
+    
     }
+    
     
     
 }
@@ -309,4 +311,12 @@ img{
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+}
+
+.closing  .time{
+    position: absolute;
+    right: 21.5px;
+    top: 20;
+    font-size: larger;
+    font-weight: bolder;
 }

@@ -3,6 +3,10 @@ import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowAltCircleLeft, faArrowAltCircleRight} from '@fortawesome/free-solid-svg-icons'
 import Footer from "../Footer/Footer";
+import AddToCartButton from "../AddToCartButton/AddToCartButton";
+// eslint-disable-next-line no-unused-vars
+import { Cart } from "../Cartitems/Cart";
+import { useCart } from "../Cartitems/Cart";
 const Home = () => {
     // style for the image slider and texts
     const Imag = {
@@ -51,7 +55,7 @@ const Home = () => {
          width:'150px',
           margin:'auto auto', 
          display:'block',
-         padding: '3px',
+         padding: '6px',
          borderRadius: '3px',
          marginBottom: '4px'
      }
@@ -62,6 +66,7 @@ const Home = () => {
         gap: '8px'
      }
 
+    
     // function for the image slider
     const [currentImage, setCurrent] = useState(0); // products
     const [run, setRun] = useState(0); // reviews
@@ -91,7 +96,7 @@ useEffect (() => {
         clearInterval(interval);
     };
    }, [images.length]);
-
+   
 
    const products = [
     { id: 1,
@@ -132,7 +137,9 @@ useEffect (() => {
     }
    ];
    
+   const { addToCart } = useCart();
 
+   
     return (
         
         <>
@@ -150,22 +157,19 @@ useEffect (() => {
         <img src={product.image} style={productsImages} />
         <p style={{fontSize: '13.8px'}}>{product.name}</p>
         <p className="price">{product.price}</p>
-        
-        </li> 
+        <AddToCartButton onClick={() => addToCart('product.image')} >
+        add
+        </AddToCartButton>
+        </li>
     ))}
     </ul> 
-
-    
         <br /> 
             </div>
             </div>  
 
+          <br /> <br /> <br /> <br />
 
-
-           
-            <br /> <br /> <br /> <br />
-
-            <section className="new-products">
+          <section className="new-products">
             <div className="newProducts">
             <li>
             <h4>Popular Products</h4>
@@ -236,6 +240,7 @@ useEffect (() => {
             </li>
             </div>
             </section>  <br /> <br />   <br /> 
+
 
             <section className="hoodiesCollection">
             <div className='hoodies'> <br />

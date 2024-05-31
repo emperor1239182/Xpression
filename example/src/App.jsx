@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faCartShopping, faBars} from '@fortawesome/free-solid-svg-icons'
 import { useState, useEffect } from 'react';
+import AddedCarts from './AddedCarts/AddedCarts';
 import Home from './Home/Home';
 import About from './About/About';
 import Shop from './Shop/Shop';
@@ -30,7 +31,6 @@ function App() {
 
   return (
 
-    
   <BrowserRouter>
   <header className='header'>
     <FontAwesomeIcon icon={faBars} className='bars' onClick={handleButtonClick}/>
@@ -56,7 +56,7 @@ function App() {
             </nav>
   <span>
   <Link to="/login" className='link'> <FontAwesomeIcon icon={faUser} style={{marginRight: '10px'}} /> </Link>
-  <FontAwesomeIcon icon={faCartShopping} />
+  <Link to="/addedCarts" className='link'><FontAwesomeIcon icon={faCartShopping} /> </Link>
   </span>
   </header>
   <nav className='menu'>
@@ -87,12 +87,10 @@ function App() {
   <Route path='/contact' Component={Contact} />
   <Route path='/faq' Component={Faq} />
   <Route path='/login' Component={Login} />
+  <Route path='/AddedCarts' Component={AddedCarts} />
   </Routes>
   
-            
   </BrowserRouter>
-
-
   );
 }
 
