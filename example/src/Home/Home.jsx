@@ -157,8 +157,8 @@ useEffect (() => {
         <img src={product.image} style={productsImages} />
         <p style={{fontSize: '13.8px'}}>{product.name}</p>
         <p className="price">{product.price}</p>
-        <AddToCartButton onClick={() => addToCart('product.image')} >
-        add
+        <AddToCartButton onClick={() => addToCart(product.image)} >
+           Add to cart
         </AddToCartButton>
         </li>
     ))}
@@ -177,66 +177,77 @@ useEffect (() => {
                 <Link to="/shop" className='link'> <img src="/public/hf.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>High Fashion</p> 
                 <p className="price">$9000</p>
+                <AddToCartButton onClick={() => addToCart("/public/hf.JPG")} >Add to cart</AddToCartButton>
             </li>
             <li>
             <br /> <br />
                 <Link to="/shop" className='link'> <img src="/public/green joggers.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Joggers</p>
                 <p className="price">$6000</p>
+               <AddToCartButton onClick={() => addToCart("/public/green joggers.JPG")} >Add to cart</AddToCartButton>
             </li>
             <li>
             <br /> <br />
                 <Link to="/shop" className='link'> <img src="/public/armless.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Armless</p>
                 <p className="price">$2000</p>
+                <AddToCartButton onClick={() => addToCart("/public/armless.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
             <br /> <br />
                 <Link to="/shop" className='link'> <img src="/public/white vintage.JPG" style={productsImages}></img>  </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Vintage</p>
                 <p className="price">$1000</p>
+                <AddToCartButton onClick={() => addToCart("/public/white vintage.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
                 <br/> <br />
                 <Link to="/shop" className="link "> <img src="/public/jeans up and down.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Zipper jeans</p>
                 <p className="price">$3000</p>
+                <AddToCartButton onClick={() => addToCart("/public/jeans up and down.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
                 <br/> <br />
                 <Link to="/shop" className="link "> <img src="/public/TTIO8506.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Two Piece</p>
                 <p className="price">$9000</p>
+                <AddToCartButton onClick={() => addToCart("/public/TTIO8506.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
                 <br/> <br />
                 <Link to="/shop" className="link "> <img src="/public/PGGY2062.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}> Chrome Combat Short</p>
                 <p className="price">$4000</p>
+                <AddToCartButton onClick={() => addToCart("/public/PGGY2062.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
                 <br/> <br />
                 <Link to="/shop" className="link "> <img src="/public/LXLK6631.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>High Quality Stylish</p>
                 <p className="price">$3000</p>
+                <AddToCartButton onClick={() => addToCart("/public/LXLK6631.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
                 <br/> <br />
                 <Link to="/shop" className="link "> <img src="/public/KVJJ2447.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Zipper Joggers</p>
                 <p className="price">$8000</p>
+                <AddToCartButton onClick={() => addToCart("/public/KVJJ2447.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
                 <br/> <br />
                 <Link to="/shop" className="link "> <img src="/public/women jeans.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Chrome Combat jeans</p>
                 <p className="price">$2000</p>
+                <AddToCartButton onClick={() => addToCart("/public/women jeans.JPG")} > Add to cart</AddToCartButton>
             </li>
             <li>
                 <br/> <br />
                 <Link to="/shop" className="link "> <img src="/public/black armless.JPG" style={productsImages}></img> </Link>
                 <p className="productName" style={{fontSize: '13.8px'}}>Two Piece</p>
                 <p className="price">$9000</p>
+                <AddToCartButton onClick={() => addToCart("/public/black armless.JPG")} > Add to cart</AddToCartButton>
             </li>
             </div>
             </section>  <br /> <br />   <br /> 
@@ -278,6 +289,7 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Blue Combat Pant</p>
                 <p className="price">$700</p>
+                <AddToCartButton onClick={() => addToCart("/public/blue cargo pant.JPG")} > Add to cart </AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
@@ -285,6 +297,7 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Cargo Pant</p>
                 <p className="price">$6000</p>
+                <AddToCartButton onClick={() => addToCart("/public/brown cargo.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
@@ -292,6 +305,7 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Luxury Cobant Pant</p>
                 <p className="price">$3000</p>
+                <AddToCartButton onClick={() => addToCart("/public/quality combat pant.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
@@ -299,6 +313,7 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Perfect Fit</p>
                 <p className="price">$1300</p>
+                <AddToCartButton onClick={() => addToCart("/public/slim fit cargo.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
@@ -306,13 +321,15 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>High Fashion</p>
                 <p className="price">$2500</p>
+                <AddToCartButton onClick={() => addToCart("/public/white rope cargo.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
                  <img src="/public/white jorgas.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Jorgas</p>
-                <p className="price">$5000</p>
+                <p className="price">$500</p>
+                <AddToCartButton onClick={() => addToCart("/public/white jorgas.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
@@ -320,6 +337,7 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Two Piece</p>
                 <p className="price">$800</p>
+                <AddToCartButton onClick={() => addToCart("/public/swag.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
@@ -327,13 +345,15 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Zip UP Pant</p>
                 <p className="price">$1000</p>
+                <AddToCartButton onClick={() => addToCart("/public/ash joggers.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li>
                 <Link to="/shop" className="link ">
                  <img src="/public/blue cargo pant.JPG" className="sweater" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Cargo Pant</p>
-                <p className="price">$12000</p>
+                <p className="price">$1200</p>
+                <AddToCartButton onClick={() => addToCart("/public/blue cargo pant.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 </div>
             </div>
@@ -347,14 +367,16 @@ useEffect (() => {
                  <img src="/public/High fashion mixed loafers.JPG"  style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Mixed Loafers</p>
-                <p className="price">$6000</p>
+                <p className="price">$600</p>
+                <AddToCartButton onClick={() => addToCart("/public/High fashion mixed loafers.JPG")} > Add to cart</AddToCartButton>
                 </li> 
                 <li> <br /> <br />
                 <Link to="/shop" className="link ">
                  <img src="/public/female.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Jeans Made sandals</p>
-                <p className="price">$1000</p>
+                <p className="price">$100</p>
+                <AddToCartButton onClick={() => addToCart("/public/female.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li> <br /> <br />
                 <Link to="/shop" className="link ">
@@ -362,13 +384,15 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Derby</p>
                 <p className="price">$3000</p>
+                <AddToCartButton onClick={() => addToCart("/public/Derby.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li> <br /> <br />
                 <Link to="/shop" className="link ">
                  <img src="/public/Loafers.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Loafers</p>
-                <p className="price">$1000</p>
+                <p className="price">$100</p>
+                <AddToCartButton onClick={() => addToCart("/public/Loafers.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li> <br /> <br />
                 <Link to="/shop" className="link ">
@@ -376,27 +400,31 @@ useEffect (() => {
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>All Black Oxford</p>
                 <p className="price">$2500</p>
+                <AddToCartButton onClick={() => addToCart("/public/oxford sshoe.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li> <br /> <br />
                 <Link to="/shop" className="link ">
                  <img src="/public/pink crocs.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Crocs</p>
-                <p className="price">$8000</p>
+                <p className="price">$800</p>
+                <AddToCartButton onClick={() => addToCart("/public/pink crocs.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li> <br /> <br />
                 <Link to="/shop" className="link ">
                  <img src="/public/loaffers.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Loafers</p>
-                <p className="price">$1600</p>
+                <p className="price">$600</p>
+                <AddToCartButton onClick={() => addToCart("/public/loaffers.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 <li> <br /> <br />
                 <Link to="/shop" className="link ">
                  <img src="/public/monk strap.JPG" style={productsImages}></img> 
                  </Link>
                 <p className="productName" style={{fontSize: '13'}}>Monk Strap</p>
-                <p className="price">$4000</p>
+                <p className="price">$400</p>
+                <AddToCartButton onClick={() => addToCart("/public/monk strap.JPG")} > Add to cart</AddToCartButton>
                 </li>
                 </div>
             </section>
@@ -432,7 +460,7 @@ useEffect (() => {
             <section className="getNotified" style={notification}>
                 <div className="notification" style={{width: '300px', margin:'20px', textAlign:'center'}} >
                     <p style={{fontSize:'1.3rem', fontFamily:'cursive', marginBottom:'10px'}}>Want To Receive Notification In Real Time For Our Latest Products?</p>
-                    <p style={{fontSize:'0.85rem', marginBottom:'10px'}}>Get Instant Alert And Be The First Person TO Know When New Items Drop</p>
+                    <p style={{fontSize:'0.85rem', marginBottom:'10px'}}>Get Instant Alert And Be The First Person To Know When New Items Drop</p>
                     <form style={{display:'flex', justifyContent:'space-evenly'}}>
                         <input type="email" placeholder="enter email" style={{height:'30px', borderRadius:'3px'}}/>
                         <input type="submit" style={{backgroundColor:'black', color:'white', width:'100px'}}/>

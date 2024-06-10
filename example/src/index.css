@@ -1,6 +1,22 @@
 html{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    
 }
 body{
-    background-color: rgba(160, 151, 149, 0.23)
+    position: relative;
+    background-color: #a097953b;
+    
+}
+
+@keyframes free {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 0;
+    }
+}
+.djk{
+    color: hwb(217 30% 40%)
 }
