@@ -38,19 +38,19 @@ function App() {
   <nav className='menu'>
   <ul className='list' >
   <li>
-                <Link to="/home" className='link'>Home</Link>
+                <Link to="/home" className='link' >Home</Link>
             </li> 
             <li>
-                <Link to="/about" className='link'> About</Link>
+                <Link to="/about" className='link' > About</Link>
             </li>
             <li>
-                <Link to="/shop" className='link'>Shop</Link>
+                <Link to="/shop" className='link' >Shop</Link>
             </li>
             <li>
-              <Link to='/contact' className='link'>Contact</Link>
+              <Link to='/contact' className='link' >Contact</Link>
             </li>
             <li>
-              <Link to='/faq' className='link'>Faqs</Link>
+              <Link to='/faq' className='link' >Faqs</Link>
             </li>
             </ul>
             </nav>
@@ -62,19 +62,19 @@ function App() {
   <nav className='menu'>
   <ul id='list'>
   <li>
-                <Link to="/home" className='link'>Home</Link>
+                <Link to="/home" className='link' onClick={handleButtonClick}>Home</Link>
             </li> 
             <li>
-                <Link to="/about" className='link'> About</Link>
+                <Link to="/about" className='link' onClick={handleButtonClick}> About</Link>
             </li>
             <li>
-                <Link to="/shop" className='link'>Shop</Link>
+                <Link to="/shop" className='link' onClick={handleButtonClick}>Shop</Link>
             </li>
             <li>
-              <Link to='/contact' className='link'>Contact</Link>
+              <Link to='/contact' className='link' onClick={handleButtonClick}>Contact</Link>
             </li>
             <li>
-              <Link to='/faq' className='link'>Faqs</Link>
+              <Link to='/faq' className='link' onClick={handleButtonClick}>Faqs</Link>
             </li>
             </ul>
             </nav>
