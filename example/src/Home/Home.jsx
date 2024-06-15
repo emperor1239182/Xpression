@@ -8,6 +8,7 @@ import AddToCartButton from "../AddToCartButton/AddToCartButton";
 import { Cart } from "../Cartitems/Cart";
 import { useCart } from "../Cartitems/Cart";
 const Home = () => {
+    const { addToCart, showNotification } = useCart();
     // style for the image slider and texts
     const Imag = {
         width: '100%',
@@ -136,10 +137,7 @@ useEffect (() => {
       price: '$300'
     }
    ];
-   
-   const { addToCart } = useCart();
 
-   
     return (
         
         <>
@@ -148,6 +146,7 @@ useEffect (() => {
                 <p className="texts" style={ImgTexts}> {images[currentImage].text} </p>
 
     </div>
+    {showNotification && <div className="notification">Item added to cart successfully!</div>}
     <div className="samples" style={Samples}>
             <div className="items">
                 <ul style={list}> 
@@ -157,7 +156,7 @@ useEffect (() => {
         <img src={product.image} style={productsImages} />
         <p style={{fontSize: '13.8px'}}>{product.name}</p>
         <p className="price">{product.price}</p>
-        <AddToCartButton onClick={() => addToCart(product.image)} >
+        <AddToCartButton onClick={() => addToCart(product.image)} > 
            Add to cart
         </AddToCartButton>
         </li>
@@ -458,7 +457,7 @@ useEffect (() => {
             </section> <br />
 
             <section className="getNotified" style={notification}>
-                <div className="notification" style={{width: '300px', margin:'20px', textAlign:'center'}} >
+                <div style={{width: '300px', margin:'20px', textAlign:'center'}} >
                     <p style={{fontSize:'1.3rem', fontFamily:'cursive', marginBottom:'10px'}}>Want To Receive Notification In Real Time For Our Latest Products?</p>
                     <p style={{fontSize:'0.85rem', marginBottom:'10px'}}>Get Instant Alert And Be The First Person To Know When New Items Drop</p>
                     <form style={{display:'flex', justifyContent:'space-evenly'}}>
